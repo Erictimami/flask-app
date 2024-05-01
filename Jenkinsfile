@@ -6,12 +6,12 @@ pipeline {
      }
     environment {
     DOCKERHUB_CREDENTIALS = credentials('karo-dockerhub')
-    APP_NAME = "ooghenekaro/myflaskapp"
+    APP_NAME = "erictimami/myflaskapp"
     }
     stages { 
         stage('SCM Checkout') {
             steps{
-           git branch: 'main', url: 'https://github.com/ooghenekaro/flask-app.git'
+           git branch: 'main', url: 'https://github.com/Erictimami/flask-app.git'
             }
         }
 
